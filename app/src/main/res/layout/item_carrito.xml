@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/ivProd"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/translucent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvProdTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivProd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvVendName"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="20dp"
+        android:text="Example of a product Title"
+        android:maxLines="2"
+        />
+
+    <TextView
+        android:id="@+id/tvVendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Saler"
+        app:layout_constraintLeft_toLeftOf="@id/tvProdTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvProdTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1000.00"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProdTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy!"
+        android:textAlignment="center"
+        android:background="@color/translucent"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrecio"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
